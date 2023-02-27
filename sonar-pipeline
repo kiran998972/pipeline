@@ -1,12 +1,12 @@
 pipeline{
     agent any
     environment {
-        PATH = "$PATH:C:\Users\GOWRA MEENAKSHI\Desktop\softwares\maven\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin"
+        PATH = "$PATH:C:\Program Files\apache-maven-3.8.6\bin"
     }
     stages{
        stage('GetCode'){
             steps{
-                git 'https://github.com/Meenakshi0812/pipeline.git'
+                git 'https://github.com/kiran998972/pipeline.git'
             }
          }        
        stage('Build'){
